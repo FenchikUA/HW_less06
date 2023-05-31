@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inconsolata', monospace;
+  background: linear-gradient(90deg, #cfecd0, #a0cea7, #9ec0db);
+  color: #555555;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.block {
+  width: 400px;
+  margin: auto;
+  padding: 20px 20px 5px 20px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.15);
+  background: rgba(255, 255, 255, .3);
+}
+
+.todo-h1 {
+  text-align: right;
+  border-bottom: 1px solid rgba(85,85,85,0.35);
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.todo-add-all {
+  padding: 10px 0;
+  display: flex;
+  gap: 5px;
+}
+
+.todo-input {
+  width: 70%;
+  border: none;
+  padding-left: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, .5);
+}
+
+.todo-add {
+  width: 30%;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  height: 30px;
+  text-align:center;
+  border: none;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #5ab8e0, #5aba8c);
+}
+
+.block-view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+  background: rgba(95,195,228,0.5);
+  gap: 10px;
+}
+
+.todo-view-btn {
+  display: flex;
+  gap: 5px;
+}
+
+.btn-done,
+.btn-delete {
+  cursor: pointer;
+}
+
+.btn-done:hover {
+  color: green;
+  font-weight: bold;
+}
+
+.btn-delete:hover {
+  color: red;
+  font-weight: bold;
+  transition: .5s;
+  transform: rotate(90deg);
+}
+
+.done {
+  background: rgb(149, 215, 149);
+}
